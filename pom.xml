@@ -4,7 +4,7 @@
     
   <groupId>de.informatica-feminale</groupId>
   <artifactId>buildmanagement-antje</artifactId>
-  <version>1</version>
+  <version>2SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Kalender</name>
@@ -19,7 +19,7 @@
   
   <scm>
 		<developerConnection>scm:git:https://github.com/AntjePotti/Feminale.git</developerConnection>
-		<tag>SCMTagAntje</tag>
+		<tag>HEAD</tag>
 	</scm>
 
   <properties>
