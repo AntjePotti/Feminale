@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
     
   <groupId>de.informatica-feminale</groupId>
   <artifactId>buildmanagement-antje</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>Kalender</name>
@@ -18,6 +17,11 @@
 	  </repository>
   </repositories>
   
+  <scm>
+		<developerConnection>scm:git:https://github.com/AntjePotti/Feminale.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <maven.compiler.source>1.8</maven.compiler.source>
@@ -63,6 +67,11 @@
 
   <build>
     <plugins>
+    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-release-plugin</artifactId>
+		<version>2.5.2</version>
+	</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -158,7 +167,7 @@
 		         <id>enforce</id>
 		         <configuration>
 		         <rules>    
-		         <dependencyConvergence></dependencyConvergence>
+		         <dependencyConvergence />
 		         </rules>
 		         </configuration>
 		        <goals>
@@ -192,7 +201,7 @@
     								</goals>
     							</pluginExecutionFilter>
     							<action>
-    								<ignore></ignore>
+    								<ignore />
     							</action>
     						</pluginExecution>
     					</pluginExecutions>
