@@ -6,7 +6,7 @@ import doclets.GlossaryEntry;
 
 /**
  * A one-time or regular meetup with talks about current tech topics.
- *
+ * test
  */
 @GlossaryEntry
 public class Event {
