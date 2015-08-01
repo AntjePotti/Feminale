@@ -13,10 +13,10 @@ public class ApplicationIT {
 	@Rule
 	public OutputCapture capture = new OutputCapture();
 
-	@Test
-	public void defaultApplicationContext() throws Exception {
-		Application.main(new String[]{});
-		assertThat(capture.toString(), containsString("Started Application"));
-		
-	}
+//	@Test
+//	public void defaultApplicationContext() throws Exception {
+//		Application.main(new String[]{});
+//		assertThat(capture.toString(), containsString("Started Application"));
+//		
+//	}
 }
