@@ -55,7 +55,7 @@
       <version>1.0.6</version>
     </dependency>
     <dependency>
-      <groupId>de.informatica.buildmanagement</groupId>
+      <groupId>de.informatica.buildmanagment</groupId>
       <artifactId>documentation</artifactId>
       <version>0.5</version>
     </dependency>
